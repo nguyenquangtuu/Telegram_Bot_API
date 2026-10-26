@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Go Absent - Clean Bootstrap 5 Extensions
+   ========================================================================== */
+
+body {
+  background-color: #f8fafc;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #334155;
+  min-height: 100vh;
+}
+
+/* Monospace font cho mã đơn */
+.font-monospace {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace !important;
+}
+
+/* Thẻ thống kê (KPI Cards) hover nhẹ */
+.stat-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Khối biểu tượng thống kê (Icon Box) */
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+/* Avatar chữ cái đại diện người dùng */
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  color: #1e293b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Bảng dữ liệu */
+.table th {
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.table td {
+  font-size: 0.875rem;
+}
+
+/* Thẻ yêu cầu hiển thị trên điện thoại (Mobile Cards) */
+.mobile-card {
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.mobile-card:hover {
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05) !important;
+}
+
+/* SweetAlert2 Modal Styling */
+.swal2-container {
+  padding: 1rem !important;
+}
+.swal2-popup {
+  border-radius: 16px !important;
+  font-family: inherit !important;
+  padding: 1.5rem !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid #e2e8f0 !important;
+}
+.swal2-icon {
+  font-size: 0.85rem !important;
+  margin: 0.75rem auto 0.75rem auto !important;
+}
+.swal2-title {
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  padding: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+.swal2-html-container {
+  font-size: 0.9rem !important;
+  color: #334155 !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
+}
+.swal2-actions {
+  margin-top: 1.25rem !important;
+  gap: 0.5rem !important;
+}
+.swal2-actions button {
+  font-size: 0.85rem !important;
+  padding: 0.45rem 1.1rem !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+}
+.swal2-timer-progress-bar {
+  background: #0f172a !important;
+}
+
+/* Header Filter & Search Styling */
+.header-filter-group {
+  width: auto !important;
+  min-width: 220px;
+}
+.header-search-group {
+  width: auto !important;
+  min-width: 220px;
+}
+.input-group:focus-within .input-group-text {
+  border-color: #86b7fe !important;
+}
+@media (max-width: 575.98px) {
+  .header-filter-group,
+  .header-search-group {
+    width: 100% !important;
+    min-width: unset;
+  }
+}
